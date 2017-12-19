@@ -1,9 +1,15 @@
 
 
 def prime?(n)
-  count = 0
-  1.upto(Math.sqrt(n)){|number| count +=1 if(n%number == 0) }
-  return !(n <= 1 or count > 2)
+  one_and_itself = []
+   1.upto(n){|number| one_and_itself << number if (n % number == 0)}
+   if n <= 1
+       return false
+   elsif one_and_itself.count > 2
+       return false
+   else
+       return true
+   end
 end
 # end
 #   # if number.odd? && (number - 1) > 2
