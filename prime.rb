@@ -9,7 +9,7 @@ def prime?(number)
   #   end
   # end
 
-  if number.odd? && (number - 1) < 2
+  if number.odd? && (number - 1) > 2
     return true
   elsif number.include?(1763)
     return false
