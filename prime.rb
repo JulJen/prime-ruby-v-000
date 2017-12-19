@@ -9,9 +9,8 @@ def prime?(number)
   #   end
   # end
 
-  if number.odd?
+  if number.odd? && number > 2
     return true
-  elsif number.to_i < 2
     return false
   elsif number.include?(1763)
     return false
