@@ -1,19 +1,18 @@
 
 
 def prime?(number)
-  # number.each {|odd_number| odd_number.odd?}
-  #   if number.include?(number.odd?)
-  #     return true
-  #   else
-  #     return false
-  #   end
-  # end
+  # if number.odd? && (number - 1) > 2
+  #   return true
 
-  if number.odd? && (number - 1) > 2
-    return true
-
-    # odd? && number % 3 != 0
-    # number % 2 == 0 && number % 3 == 0
-  # true
-  end
-end
+# herewego = Numeric.new
+# (1..10000).each do
+#    |container|
+#    (2..(Math.sqrt(container).ceil)).each do |x|
+#       herewego = 1
+#       if (container.divmod(x)[1] == 0)
+#          herewego = 0
+#          break
+#       end
+#    end
+#    print "#{container}\," unless (herewego == 0)
+# end
