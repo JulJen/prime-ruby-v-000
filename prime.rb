@@ -1,8 +1,9 @@
 
 
-def prime?(number)
-  return false if [0, 1].include?(number)
-  (2...number).none? { |n| number % n == 0}
+def prime?(n)
+  count = 0
+  1.upto(Math.sqrt(n)){|number| count +=1 if(n%number == 0) }
+  return !(n <= 1 or count > 2)
 end
 # end
 #   # if number.odd? && (number - 1) > 2
