@@ -13,9 +13,7 @@ def prime?(number)
     return false
   elsif number.to_i < 2
     return false
-  elsif number % 41 == number.odd?
+  elsif number % 41 == number.odd? && number.odd?
     return false
-  else number.odd?
-    return true
   end
 end
