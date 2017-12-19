@@ -4,7 +4,7 @@ def prime?(number)
   return false if [0, 1].include?(number)
 (2...number).none? { |n| number % n == 0}
 end
-end
+# end
 #   # if number.odd? && (number - 1) > 2
 #   #   return true
 #   if number <= 1
