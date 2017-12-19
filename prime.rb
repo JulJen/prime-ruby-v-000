@@ -1,6 +1,6 @@
 
 
-def prime?(givem)
+def prime?(given)
   prime = []
    1.upto(given){|number| prime << number if (given % number == 0)}
    if given <= 1
