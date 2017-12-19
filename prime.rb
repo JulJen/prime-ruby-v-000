@@ -11,7 +11,7 @@ def prime?(number)
 
   if number.even?
     return false
-  elsif number.to_i < 1
+  elsif number.to_i < 2
     return false
   else number.odd?
     return true
