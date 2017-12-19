@@ -11,7 +11,7 @@ def prime?(number)
 
   if number.odd? && (number - 1) > 2
     return true
-  elsif number.any?(1763)
+  elsif number.find?(1763)
     return false
     # odd? && number % 3 != 0
     # number % 2 == 0 && number % 3 == 0
