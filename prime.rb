@@ -8,6 +8,8 @@ def prime?(number)
   #     return false
   #   end
   # end
+  num = gets.to_i
+  
   if number <= 1 || number.even?
     false
   elsif number.odd? || number % 2 == 0
