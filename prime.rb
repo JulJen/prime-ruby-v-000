@@ -8,18 +8,12 @@ def prime?(number)
   #     return false
   #   end
   # end
-    (number - 1).each do |n|
-      return false if number % n == 0
-    end
-    true
-  end
-end
-  # number.each_with_index|test|
-  # if number <= 1 || number.even?
-  #   false
-  # elsif number.odd? || number % 2 == 0
-  # # if number.odd?
-  #   return true
+  number.each_with_index|test|
+  if number <= 1 || number.even?
+    false
+  elsif number.odd? || number % 2 == 0
+  # if number.odd?
+    return true
   # elsif 1 / number < 0
   #   return false
   # elsif number % 1 == 0
@@ -29,5 +23,5 @@ end
   # #   return false
   # else
   #   return false
-#   end
-# end
+  end
+end
