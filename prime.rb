@@ -13,7 +13,7 @@ def prime?(number)
     return false
   elsif number.to_i < 2
     return false
-  elsif number.odd?
+  elsif number.odd? && number % 3 != 0
     # number % 2 == 0 && number % 3 == 0
     return true
   end
