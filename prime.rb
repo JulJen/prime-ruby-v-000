@@ -15,6 +15,5 @@ def prime?(number)
     return false
   else number.odd?
     return true
-
   end
 end
