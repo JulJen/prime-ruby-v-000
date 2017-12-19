@@ -8,6 +8,8 @@ def prime?(number)
   #     return false
   #   end
   # end
+  (2..(num - 1)).each do |n|
+      return false if num % n == 0
   number.each_with_index|test|
   if number <= 1 || number.even?
     false
