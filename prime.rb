@@ -9,7 +9,7 @@ def prime?(number)
   #   end
   # end
 
-  if number <= 1 || number.even?
+  if number / number != number.even
     return false
   elsif number.odd? || number % 2 == 0
     return true
