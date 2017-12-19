@@ -11,7 +11,6 @@ def prime?(number)
 
   if number.odd? && number > 2
     return true
-    return false
   elsif number.include?(1763)
     return false
     # odd? && number % 3 != 0
