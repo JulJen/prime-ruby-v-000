@@ -13,7 +13,7 @@ def prime?(number)
     return false
   elsif number.to_i < 2
     return false
-  elsif number % 41 == 43
+  elsif number % 41 == 0
     return false
   end
 end
