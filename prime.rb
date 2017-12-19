@@ -3,6 +3,8 @@
 def prime?(number)
   # if number.odd? && (number - 1) > 2
   #   return true
+  if number <= 1
+    return false
 
 # herewego = Numeric.new
 # (1..10000).each do
@@ -15,4 +17,5 @@ def prime?(number)
 #       end
 #    end
 #    print "#{container}\," unless (herewego == 0)
-# end
+  end
+end
