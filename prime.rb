@@ -9,9 +9,9 @@ def prime?(number)
   #   end
   # end
 
-  if number / number == number.even?
-    return true
-  elsif number <= 0
+  if number.even?
+    return false
+  elsif number <= number %
     return false
   elsif number.odd?
     return true
